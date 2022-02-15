@@ -10,6 +10,7 @@ import { selectCollection } from "../../redux/shop/shop.selectors";
 import { CollectionPageContainer, TitleContainer, ItemsContainer } from "./collection.styles";
 
 let params = {collectionId: 'hats'}; //TODO
+
 const CollectionPage = ({collection}) => {
 	params = useParams(); //TODO
 	

@@ -11,9 +11,6 @@ import {CollectionItemContainer,
 	AddButtonContainer
 } from './collection-item.style'; //TODO add button container
 
-import CustomButton from "../custom-button/custom-button.component";
-import './collection-item.styles.scss';
-
 const CollectionItem = ({item, addItem}) => {
 
 	const {name, price, imageUrl} = item;
@@ -33,9 +30,9 @@ const CollectionItem = ({item, addItem}) => {
 				</CollectionFooterPriceContainer>
 			</CollectionFooterContainer>
 
-			<CustomButton className='custom-button-styles' onClick={()=> addItem(item)} inverted>
+			<AddButtonContainer className='custom-button-styles' onClick={()=> addItem(item)} inverted>
 				ADD TO CART
-			</CustomButton>
+			</AddButtonContainer>
 		</CollectionItemContainer>
 	);
 }
